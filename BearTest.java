@@ -76,4 +76,24 @@ public void canThrowUpChicken(){
   assertEquals("Buck Buck Chicken", original.speak());
 }
 
+@Test
+public void testSalmonNutrition(){
+  assertEquals(1000, salmon.getNutritionValue());
+}
+
+@Test
+public void testChickenNutrition(){
+  assertEquals(2000, chicken.getNutritionValue());
+}
+
+@Test
+public void testHumanNutrition(){
+  assertEquals(10000, human.getNutritionValue());
+}
+
+// @Test
+// public void testTotalNutrition(){
+//   assertEquals(13000, bear.totalNutrition());
+// }
+
 }
